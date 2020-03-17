@@ -1,50 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-   <title>Mood Ring</title>
-   <meta charset="utf-8">
-
+   <title>Kevin Snake Game</title>
 </head>
-
-
 <body>
-
-<h1 id="header">Mood Ring</h1>
-<h2>Write how you feel?</h2>
-<h3>excited, sad, mysterious, optimistic, silly, gloomy, angry, Energetic, flirty?</h3>
-   <input type="text" id="inp"/>
-   <button onclick="pressed()">Click</button>
-
-<script>
-
-function pressed(){
-      var text = document.getElementById("inp").value
-      if(text === "angry"){
-         document.getElementById("header").style.color = "red";
-      } else if (text==="energetic") {
-         document.getElementById("header").style.color = "green";
-      } else if (text==="sad") {
-         document.getElementById("header").style.color = "blue";
-      } else if (text==="excited") {
-         document.getElementById("header").style.color = "orange";
-      } else if (text==="mysterious") {
-         document.getElementById("header").style.color = "purple";
-      } else if (text==="optimistic") {
-         document.getElementById("header").style.color = "yellow";
-      } else if (text==="silly") {
-         document.getElementById("header").style.color = "brown";
-      } else if (text==="gloomy") {
-         document.getElementById("header").style.color = "black";
-      } else if (text==="flirty") {
-         document.getElementById("header").style.color = "pink";
-   }
-
-}
-</script>
-
+   <canvas class="canvas" height="300" width="300" style="background-color:#2A363B"></canvas>
 </body>
-
-
+<script type="text/javascript" src="js/fruit.js"></script>
+<script type="text/javascript" src="js/snake.js"></script>
+<script type="text/javascript" src="js/draw.js"></script>
 </html>
